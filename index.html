@@ -6,6 +6,8 @@
     <title>204 | final web assignment</title>
     <link rel="shortcut icon" href="/img/Graphics designer & Web design.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/51e1d05097.js" crossorigin="anonymous"></script>
 </head>
 <style>
     *{
@@ -17,7 +19,7 @@
         margin-left: 20rem;
     }
     .ml-3{
-        margin-left: 10rem;
+        margin-left: 9rem;
     }
     .type{
         color: white;
@@ -34,7 +36,7 @@
         left: 20px;
     }
     .bg-banner{
-        background: rgba(119, 119, 119, 0.687) url(./img/img-4.webp);
+        background: rgba(119, 119, 119, 0.687) url(/img/cover.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: darken;
@@ -62,11 +64,20 @@
         padding-bottom: 15rem;
         background-color: rgba(153, 244, 250, 0.411);
     }
+    #mobile_property {
+        display: none;
+    }
     /* media quary starts */
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 600px) {
         .banner{
             margin-left:2rem
+        }
+        #mobile_property {
+        display: block;
+    }
+    #desktop_property {
+            display: none;
         }
 
     }
@@ -98,15 +109,20 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-5">
+                <div class="navbar-nav ml-3 py-2">
                   <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  <a class="nav-link active" href="#">PROPATIES</a>
-                  <a class="nav-link active" href="#">AGENTS</a>
-                  <a class="nav-link active" href="#">BLOG</a>
-                  <a class="nav-link active" href="#">MY ACCOUNT</a>
-                  <a class="nav-link active" href="#">PAGES</a>
+                  <a class="nav-link active" href="#"><span class="manue-btn">PROPATIES</span></a>
+                  <a class="nav-link active" href="#"><span class="manue-btn">AGENTS</span></a>
+                  <a class="nav-link active" href="#"><span class="manue-btn">BLOG</span></a>
+                  <a class="nav-link active" href="#"><span class="manue-btn">MY ACCOUNT</span></a>
+                  <a class="nav-link active" href="#"><span class="manue-btn">PAGES</span></a>
                   <a class="nav-link active ml-3 text-primary" href="#">Sign in</a>
                   <a class="nav-link active btn btn-primary text-white ms-3" href="#">Sign up</a>
+                  <div class="position-relative ms-3">
+                    <a class="nav-link active text-primary" href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger .text-black p-1">0
+                </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -120,13 +136,14 @@
                     <div class="row align-items-center">
                         <div class="col-md-8 text-white ">
                            <h1>Find Your Favourite Proparty</h1>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores repudiandae doloremque dolorum velit dolorem error commodi! Velit, odio. Libero atque quibusdam autem eaque tenetur voluptatibus sequi quia, magnam itaque.</p>
-                           <button class="btn btn-primary me-2">Contact Us</button><button class="btn btn-primary">Read More</button>
+                           <p>An excellent real estate professional, integrity, in-depth community and market knowledge, marketing savvy, effective negotiation skills and a high-quality professional network, all of which are hallmarks of how Riezl Baker works. Contact her today to learn more about Lake Oconee real estate and homes for sale!</p>
+                           <button class="btn btn btn-outline-light btn-lg me-2">Contact Us</button>
+                           <button class="btn btn-outline-light btn-lg">Read More</button>
                         </div>
                         <div class="col-md-4">
                             <div class="card border-0 p-1 position-relative">
                                 <p class="position-absolute type">For Rent</p>
-                                <img src="./img/img-11.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/img/1st.jpg" class="card-img-top img-fluid" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">Family House and houdson</h5>
                                   <p>HOUBOKEN NS USA</p>
@@ -141,13 +158,13 @@
               <section class="mt-5">
                 <div class="text-center mb-5">
                     <H2>Latest Properties</H2>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint ea dolores! Consequatur atque iusto in exercitationem</p>
+                    <p >According to the National Association of Realtors Profile of Home Buyers and Sellers, 51% of buyers found the home they purchased on the internet.</p>
                 </div>
                 <div class="row p-2 gy-3">
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type">For Rent</p>
-                            <img src="./img/img-11.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/2.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -182,7 +199,7 @@
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type1">For Rent</p>
-                            <img src="./img/img-2.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/3.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -217,7 +234,7 @@
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type1">For Rent</p>
-                            <img src="./img/img-3.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/4.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -252,7 +269,7 @@
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type">For Rent</p>
-                            <img src="./img/img-04.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/5.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -287,7 +304,7 @@
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type1">For Rent</p>
-                            <img src="./img/img-44.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/6.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -322,7 +339,7 @@
                     <div class="col-md-4">
                         <div class="card border-0 position-relative pb-3">
                             <p class="position-absolute type1">For Rent</p>
-                            <img src="./img/img-66.jpg" class="card-img-top img-fluid" alt="...">
+                            <img src="/img/7.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Family House and houdson</h5>
                               <p>HOUBOKEN NS USA</p>
@@ -359,26 +376,50 @@
           </div>
     </div>
     <main class="container mt-5 mb-5">
-        <div>
+
+        <div id="desktop_property">
             <div class="text-center">
                 <h2>Proparty By City</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
             <div class="row gy-3">
-                <div class="col-md-9">
-                    <img src="./img/Untitled-9.jpg" alt="" class="img-fluid rounded">
+                <div class="col-12 col-md-9">
+                    <img src="/img/11.jpg" alt="" class="img-fluid rounded">
                 </div>
                 <div class="col-md-3">
-                    <img src="./img/Untitled-7.jpg" alt="" class="img-fluid rounded">
+                    <img src="/img/12.jpg" alt="" class="img-fluid rounded">
                 </div>
                 <div class="col-md-3">
-                    <img src="./img/Untitled-7.jpg" alt="" class="img-fluid rounded">
+                    <img src="./img/12.jpg" alt="" class="img-fluid rounded">
                 </div>
                 <div class="col-md-9">
-                    <img src="./img/Untitled-9.jpg" alt="" class="img-fluid rounded">
+                    <img src="./img/11.jpg" alt="" class="img-fluid rounded">
                 </div>
             </div>
         </div> 
+<!-- mobile view strt-->
+        <div id="mobile_property">
+            <div class="text-center">
+                <h2>Proparty By City</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+            <div class="row gy-3">
+                <div class="col-12 col-md-9">
+                    <img src="/img/11.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-3">
+                    <img src="/img/13.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-3">
+                    <img src="/img/14.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-9">
+                    <img src="/img/15.jpg" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+<!-- mobile view end -->
+
             <div class="bg-body-secondary p-5 mt-5">
                 <div class="text-center mb-5">
                     <h2 class="mt-5">Trusted Agents</h2>
